@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Louis Bataillard <info@mobweb.ch>
+ * @package    MobWeb_Minimumage
+ * @copyright    Copyright (c) MobWeb GmbH (https://mobweb.ch)
+ */
+-->
+<config>
+    <modules>
+        <MobWeb_Minimumage>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MobWeb_Minimumage>
+    </modules>
+</config>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author    Louis Bataillard <info@mobweb.ch>
+ * @package    MobWeb_Minimumage
+ * @copyright    Copyright (c) MobWeb GmbH (https://mobweb.ch)
+ */
+-->
+<config>
+    <modules>
+        <MobWeb_Minimumage>
+            <version>0.0.1</version>
+        </MobWeb_Minimumage>
+    </modules>
+    <global>
+        <helpers>
+            <mobweb_minimumage>
+                <class>MobWeb_Minimumage_Helper</class>
+            </mobweb_minimumage>
+        </helpers>
+        <models>
+            <mobweb_minimumage>
+                <class>MobWeb_Minimumage_Model</class>
+            </mobweb_minimumage>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <customer_save_before>
+                <observers>
+                    <mobweb_minimumage_customer_save_before>
+                        <class>mobweb_minimumage/observer</class>
+                        <method>customerSaveBefore</method>
+                    </mobweb_minimumage_customer_save_before>
+                </observers>
+            </customer_save_before>
+        </events>
+        <translate>
+            <modules>
+                <mobweb_minimumage>
+                    <files>
+                        <default>mobweb_minimumage.csv</default>
+                    </files>
+                </mobweb_minimumage>
+            </modules>
+        </translate>
+    </frontend>
+</config>
